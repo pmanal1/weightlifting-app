@@ -113,15 +113,18 @@ export default function Home() {
       <h1>Weightlifting App</h1>
       <ul>
         <li>
-          Bench Press 100 lbs
+          Bench Press
+          <input></input>
           <input type="checkbox"></input>
         </li>
         <li>
-          Squat 100 lbs
+          Squat
+          <input></input>
           <input type="checkbox"></input>
         </li>
         <li>
-          Deadlift 100 lbs
+          Deadlift
+          <input></input>
           <input type="checkbox"></input>
         </li>
       </ul>
