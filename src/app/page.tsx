@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const exercises = ["Bench Press", "Squat", "Deadlift", "Bent-over Row", "Situps", "Assisted Pullups", "Lat pulldown"]
+
 export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -112,21 +114,13 @@ export default function Home() {
     <main>
       <h1>Weightlifting App</h1>
       <ul>
-        <li>
-          Bench Press
-          <input></input>
-          <input type="checkbox"></input>
-        </li>
-        <li>
-          Squat
-          <input></input>
-          <input type="checkbox"></input>
-        </li>
-        <li>
-          Deadlift
-          <input></input>
-          <input type="checkbox"></input>
-        </li>
+        {exercises.map(exercise => (
+          <li>
+            {exercise}
+            <input></input>
+            <input type="checkbox"></input>
+          </li>
+        ))}
       </ul>
 
     </main>
