@@ -1,7 +1,12 @@
-type Workout = {
+export type Workout = {
     name: string // name of the workout
     sets: number // number of sets
 }
+
+export function modifyWorkout(newWorkout: Workout[]) {
+    pauloWorkout = newWorkout;
+}
+
 
 export var pauloWorkout: Workout[] = [{
     "name": "Bench Press",

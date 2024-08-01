@@ -1,9 +1,13 @@
-import Image from "next/image";
+'use client'
+
 import { pauloWorkout } from "./data";
+import { useEffect } from "react";
 
 var setsArray: number[];
 
 export default function Home() {
+  useEffect(() => {}, [])
+  
   return (
     <main>
       <h1>Weightlifting App</h1>
